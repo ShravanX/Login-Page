@@ -1,0 +1,131 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("login.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", serif;
+    padding: 20px; /* for small screen padding */
+    box-sizing: border-box;
+}
+
+.top .form {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.userinput {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.userinput input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding-left: 10px;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.userinput input::placeholder {
+    color: aliceblue;
+    font-size: medium;
+}
+
+.userinput i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.checkbox {
+    color: white;
+    font-size: small;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: small;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+}
+
+.btn button {
+    width: 100%;
+    height: 100%;
+    background: #ffc87c;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 3px white;
+    margin-top: 15px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+.userinput input:hover {
+    box-shadow: 0 0 3px white;
+}
+
+/* ✅ Media Query for screens below 480px */
+@media (max-width: 480px) {
+    .top .form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .btn button {
+        font-size: 18px;
+    }
+
+    .checkbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox a {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
